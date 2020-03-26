@@ -20,17 +20,30 @@ vector<vector <int>> aantalkamers(vector<vector<int>> &rooms){
 int main(){
 	srand(time(NULL));
 	vector<vector <int>> rooms= {
-								{4, 5, 7},
-								{2, 4, 5},
-								{1, 3, 6},
-								{2, 4, 7},
-								{0, 1, 3},
-								{0, 1, 6},
-								{2, 5, 7},
-								{0, 3, 6}};
+								{10, 11, 19},  	//0
+								{2, 10, 11},   	//1
+								{1, 3, 12},	//2
+								{2, 4, 13},	//3
+								{3, 5, 14},	//4
+								{4, 6, 15},	//5
+								{5, 7, 16},	//6
+								{6, 8, 17},	//7
+								{7, 9, 18},	//8
+								{8, 10, 19},	//9
+								{0, 1, 9},	//10
+								{0, 1, 12},	//11
+								{2, 11, 13},	//12
+								{3, 12, 14},	//13
+								{4, 13, 15},	//14
+								{5, 14, 16},	//15
+								{6, 15, 17},	//16
+								{7, 16, 18},	//17
+								{8, 17, 19},	//18
+								{0, 9, 18}};	//19
 //	aantalkamers(rooms);
-	int index = rand() % 8;
+	int index = rand() % 20;
 	int input = 0;
+	int Rn_Wumpus = rand() % 20;
 	
 	cout << "(Typ '-1' als je wilt stoppen met spelen, snoepie!)" << endl; 
 	while(input != -1){
