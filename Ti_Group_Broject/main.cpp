@@ -22,16 +22,16 @@ int main(){
 	vector<vector <int>> rooms= {
 								{10, 11, 19},  	//0
 								{2, 10, 11},   	//1
-								{1, 3, 12},	//2
-								{2, 4, 13},	//3
-								{3, 5, 14},	//4
-								{4, 6, 15},	//5
-								{5, 7, 16},	//6
-								{6, 8, 17},	//7
-								{7, 9, 18},	//8
+								{1, 3, 12},		//2
+								{2, 4, 13},		//3
+								{3, 5, 14},		//4
+								{4, 6, 15},		//5
+								{5, 7, 16},		//6
+								{6, 8, 17},		//7
+								{7, 9, 18},		//8
 								{8, 10, 19},	//9
-								{0, 1, 9},	//10
-								{0, 1, 12},	//11
+								{0, 1, 9},		//10
+								{0, 1, 12},		//11
 								{2, 11, 13},	//12
 								{3, 12, 14},	//13
 								{4, 13, 15},	//14
@@ -56,7 +56,7 @@ int main(){
 		cin >> input; 
 		
 		if(cin.fail()){
-			cout << endl << "!!!Foutieve syntax!!!" << endl; 
+			cout << endl << "!!!Foutieve Syntax!!!" << endl; 
 			cin.clear();
 			cin.ignore(INT_MAX, '\n');
 		}
@@ -71,14 +71,14 @@ int main(){
 					cin >> input;
 				}
 				else if(cin.fail()){
-					cout << endl << "!!!Foutieve syntax!!!"; 
+					cout << endl << "!!!Foutieve Syntax!!!"; 
 					cin.clear();
 					cin.ignore(INT_MAX, '\n');
 					cout << endl <<"Naar welke kamer zou je willen verplaatsen: ";
 					cin >> input;
 				}
 				else{
-					cout << endl << "!!!Verkeerde kamer!!!";
+					cout << endl << "!!!Ongeldige Keuze!!!";
 					cout << endl << "Naar welke kamer zou je willen verplaatsen: ";
 					cin >> input;
 				}
